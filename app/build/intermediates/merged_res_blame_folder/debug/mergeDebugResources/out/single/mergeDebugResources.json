@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "com.quranapp.islamic.app-debug-92:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.quranapp.islamic.app-main-94:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.quranapp.islamic.app-debug-92:/xml_file_paths.xml.flat",
+        "source": "com.quranapp.islamic.app-main-94:/xml/file_paths.xml"
+    },
+    {
+        "merged": "com.quranapp.islamic.app-debug-92:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.quranapp.islamic.app-main-94:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.quranapp.islamic.app-debug-92:/drawable_ic_notification.xml.flat",
+        "source": "com.quranapp.islamic.app-main-94:/drawable/ic_notification.xml"
+    },
+    {
+        "merged": "com.quranapp.islamic.app-debug-92:/xml_automotive_app_desc.xml.flat",
+        "source": "com.quranapp.islamic.app-main-94:/xml/automotive_app_desc.xml"
+    },
+    {
+        "merged": "com.quranapp.islamic.app-debug-92:/xml_searchable.xml.flat",
+        "source": "com.quranapp.islamic.app-main-94:/xml/searchable.xml"
+    },
+    {
+        "merged": "com.quranapp.islamic.app-debug-92:/xml_backup_rules.xml.flat",
+        "source": "com.quranapp.islamic.app-main-94:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.quranapp.islamic.app-debug-92:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.quranapp.islamic.app-main-94:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.quranapp.islamic.app-debug-92:/xml_quran_widget_info.xml.flat",
+        "source": "com.quranapp.islamic.app-main-94:/xml/quran_widget_info.xml"
+    },
+    {
+        "merged": "com.quranapp.islamic.app-debug-92:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.quranapp.islamic.app-main-94:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.quranapp.islamic.app-debug-92:/xml_data_extraction_rules.xml.flat",
+        "source": "com.quranapp.islamic.app-main-94:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.quranapp.islamic.app-debug-92:/layout_quran_widget.xml.flat",
+        "source": "com.quranapp.islamic.app-main-94:/layout/quran_widget.xml"
+    }
+]

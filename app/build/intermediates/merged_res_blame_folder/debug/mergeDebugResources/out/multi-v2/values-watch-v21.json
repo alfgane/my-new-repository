@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.quranapp.islamic.app-mergeDebugResources-90:/values-watch-v21/values-watch-v21.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ZEX\\.gradle\\caches\\8.14.3\\transforms\\f57468274892a95e187e63d8eaedd8d8\\transformed\\appcompat-1.6.1\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "from": {
+                        "startLines": "2,6,10",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,271,499",
+                        "endLines": "5,9,13",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "266,494,724"
+                    }
+                }
+            ]
+        }
+    ]
+}

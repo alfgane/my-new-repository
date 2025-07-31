@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Quran App</string>
+    <string name="default_notification_channel_id">quran_app_notifications</string>
+</resources>

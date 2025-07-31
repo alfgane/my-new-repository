@@ -17,7 +17,7 @@ import javax.inject.Inject
 class QuranApplication : Application(), Configuration.Provider {
     
     @Inject
-    lateinit var workManagerConfiguration: Configuration
+    override lateinit var workManagerConfiguration: Configuration
     
     companion object {
         private const val TAG = "QuranApplication"
@@ -112,7 +112,7 @@ class QuranApplication : Application(), Configuration.Provider {
     /**
      * توفير تكوين WorkManager
      */
-    override fun getWorkManagerConfiguration(): Configuration {
+    fun getWorkManagerConfiguration(): Configuration {
         return workManagerConfiguration
     }
 }

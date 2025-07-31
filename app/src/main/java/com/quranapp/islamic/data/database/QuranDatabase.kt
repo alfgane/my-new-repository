@@ -2,6 +2,7 @@ package com.quranapp.islamic.data.database
 
 import androidx.room.*
 import androidx.room.migration.Migration
+import androidx.room.withTransaction
 import androidx.sqlite.db.SupportSQLiteDatabase
 import com.quranapp.islamic.data.database.dao.*
 import com.quranapp.islamic.data.database.entities.*
@@ -224,7 +225,7 @@ class DatabaseHelper @javax.inject.Inject constructor(
      * إحصائيات قاعدة البيانات
      */
     suspend fun getDatabaseStats(): DatabaseStats {
-        return database.runInTransaction {
+        return database.withTransaction {
             val surahCount = database.surahDao().getAllSurahs()
             val ayahCount = database.ayahDao().getTotalAyahCount()
             val bookmarkCount = database.bookmarkDao().getBookmarkCount()
@@ -243,7 +244,7 @@ class DatabaseHelper @javax.inject.Inject constructor(
      * نسخ احتياطي من البيانات المهمة
      */
     suspend fun backupUserData(): UserDataBackup {
-        return database.runInTransaction {
+        return database.withTransaction {
             val bookmarks = database.bookmarkDao().getAllBookmarks()
             val notes = database.noteDao().getAllNotes()
             val readingProgress = database.readingProgressDao().getAllReadingProgress()

@@ -1,0 +1,1086 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.quranapp.islamic.debug"
+4    android:versionCode="1"
+5    android:versionName="1.0.0-debug" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- الأذونات المطلوبة -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:6:5-67
+12-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:7:5-79
+13-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:7:22-76
+14    <uses-permission android:name="android.permission.WAKE_LOCK" />
+14-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:8:5-68
+14-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:8:22-65
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+15-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:9:5-77
+15-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:9:22-74
+16    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+16-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:10:5-71
+16-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:10:22-68
+17    <uses-permission
+17-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:11:5-12:38
+18        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+18-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:11:22-78
+19        android:maxSdkVersion="28" />
+19-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:12:9-35
+20    <uses-permission
+20-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:13:5-14:38
+21        android:name="android.permission.READ_EXTERNAL_STORAGE"
+21-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:13:22-77
+22        android:maxSdkVersion="32" />
+22-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:14:9-35
+23    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+23-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:15:5-75
+23-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:15:22-72
+24    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+24-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:16:5-77
+24-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:16:22-74
+25
+26    <!-- ميزات الجهاز -->
+27    <uses-feature
+27-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:19:5-21:36
+28        android:name="android.hardware.microphone"
+28-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:20:9-51
+29        android:required="false" />
+29-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:21:9-33
+30    <uses-feature
+30-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:22:5-24:35
+31        android:name="android.hardware.audio.output"
+31-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:23:9-53
+32        android:required="true" />
+32-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:24:9-32
+33
+34    <!-- Required by older versions of Google Play services to create IID tokens -->
+35    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+35-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\37420b7a3056c20b982e87b25ad510cd\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:26:5-82
+35-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\37420b7a3056c20b982e87b25ad510cd\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:26:22-79
+36    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+36-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\35c7bd1fd7d05013f62b75a52a089ebd\transformed\play-services-measurement-api-21.5.0\AndroidManifest.xml:25:5-79
+36-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\35c7bd1fd7d05013f62b75a52a089ebd\transformed\play-services-measurement-api-21.5.0\AndroidManifest.xml:25:22-76
+37    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+37-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\35c7bd1fd7d05013f62b75a52a089ebd\transformed\play-services-measurement-api-21.5.0\AndroidManifest.xml:26:5-88
+37-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\35c7bd1fd7d05013f62b75a52a089ebd\transformed\play-services-measurement-api-21.5.0\AndroidManifest.xml:26:22-85
+38    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+38-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\35c7bd1fd7d05013f62b75a52a089ebd\transformed\play-services-measurement-api-21.5.0\AndroidManifest.xml:27:5-82
+38-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\35c7bd1fd7d05013f62b75a52a089ebd\transformed\play-services-measurement-api-21.5.0\AndroidManifest.xml:27:22-79
+39    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+39-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:25:5-81
+39-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:25:22-78
+40    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+40-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\aaf367aadfcc09a70fd6d775069858bd\transformed\play-services-measurement-21.5.0\AndroidManifest.xml:26:5-110
+40-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\aaf367aadfcc09a70fd6d775069858bd\transformed\play-services-measurement-21.5.0\AndroidManifest.xml:26:22-107
+41    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+41-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\1ea828a2e34cc70b7c3ccb3615a319e0\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:5-98
+41-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\1ea828a2e34cc70b7c3ccb3615a319e0\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:22-95
+42
+43    <permission
+43-->[androidx.core:core:1.12.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\654bb35a2c051570ea2f9fdd970dfedb\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+44        android:name="com.quranapp.islamic.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+44-->[androidx.core:core:1.12.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\654bb35a2c051570ea2f9fdd970dfedb\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+45        android:protectionLevel="signature" />
+45-->[androidx.core:core:1.12.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\654bb35a2c051570ea2f9fdd970dfedb\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+46
+47    <uses-permission android:name="com.quranapp.islamic.debug.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+47-->[androidx.core:core:1.12.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\654bb35a2c051570ea2f9fdd970dfedb\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+47-->[androidx.core:core:1.12.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\654bb35a2c051570ea2f9fdd970dfedb\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+48
+49    <application
+49-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:26:5-210:19
+50        android:name="com.quranapp.islamic.QuranApplication"
+50-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:27:9-41
+51        android:allowBackup="true"
+51-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:28:9-35
+52        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+52-->[androidx.core:core:1.12.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\654bb35a2c051570ea2f9fdd970dfedb\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+53        android:dataExtractionRules="@xml/data_extraction_rules"
+53-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:29:9-65
+54        android:debuggable="true"
+55        android:extractNativeLibs="false"
+56        android:fullBackupContent="@xml/backup_rules"
+56-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:30:9-54
+57        android:hardwareAccelerated="true"
+57-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:36:9-43
+58        android:icon="@mipmap/ic_launcher"
+58-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:31:9-43
+59        android:label="@string/app_name"
+59-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:32:9-41
+60        android:largeHeap="true"
+60-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:37:9-33
+61        android:roundIcon="@mipmap/ic_launcher_round"
+61-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:33:9-54
+62        android:supportsRtl="true"
+62-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:34:9-35
+63        android:testOnly="true"
+64        android:theme="@style/Theme.QuranApp.Starting" >
+64-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:35:9-55
+65
+66        <!-- النشاط الرئيسي -->
+67        <activity
+67-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:41:9-68:20
+68            android:name="com.quranapp.islamic.presentation.ui.main.MainActivity"
+68-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:42:13-62
+69            android:configChanges="orientation|screenSize|keyboardHidden"
+69-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:46:13-74
+70            android:exported="true"
+70-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:43:13-36
+71            android:screenOrientation="portrait"
+71-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:45:13-49
+72            android:theme="@style/Theme.QuranApp.Starting"
+72-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:44:13-59
+73            android:windowSoftInputMode="adjustResize" >
+73-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:47:13-55
+74            <intent-filter>
+74-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:48:13-51:29
+75                <action android:name="android.intent.action.MAIN" />
+75-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:49:17-69
+75-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:49:25-66
+76
+77                <category android:name="android.intent.category.LAUNCHER" />
+77-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:50:17-77
+77-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:50:27-74
+78            </intent-filter>
+79
+80            <!-- للروابط العميقة -->
+81            <intent-filter android:autoVerify="true" >
+81-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:54:13-60:29
+81-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:54:28-53
+82                <action android:name="android.intent.action.VIEW" />
+82-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:55:17-69
+82-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:55:25-66
+83
+84                <category android:name="android.intent.category.DEFAULT" />
+84-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:56:17-76
+84-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:56:27-73
+85                <category android:name="android.intent.category.BROWSABLE" />
+85-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:57:17-78
+85-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:57:27-75
+86
+87                <data
+87-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:58:17-59:44
+88                    android:host="quran"
+88-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:59:21-41
+89                    android:scheme="quranapp" />
+89-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:58:23-48
+90            </intent-filter>
+91
+92            <!-- لمشاركة النصوص -->
+93            <intent-filter>
+93-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:63:13-67:29
+94                <action android:name="android.intent.action.SEND" />
+94-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:64:17-69
+94-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:64:25-66
+95
+96                <category android:name="android.intent.category.DEFAULT" />
+96-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:56:17-76
+96-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:56:27-73
+97
+98                <data android:mimeType="text/plain" />
+98-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:58:17-59:44
+98-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:66:23-52
+99            </intent-filter>
+100        </activity>
+101
+102        <!-- نشاط القراءة -->
+103        <activity
+103-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:71:9-82:20
+104            android:name="com.quranapp.islamic.presentation.ui.reading.ReadingActivity"
+104-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:72:13-68
+105            android:configChanges="orientation|screenSize"
+105-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:76:13-59
+106            android:exported="false"
+106-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:73:13-37
+107            android:parentActivityName="com.quranapp.islamic.presentation.ui.main.MainActivity"
+107-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:78:13-76
+108            android:screenOrientation="portrait"
+108-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:75:13-49
+109            android:theme="@style/Theme.QuranApp.Reading"
+109-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:74:13-58
+110            android:windowSoftInputMode="adjustResize" >
+110-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:77:13-55
+111            <meta-data
+111-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:79:13-81:70
+112                android:name="android.support.PARENT_ACTIVITY"
+112-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:80:17-63
+113                android:value=".presentation.ui.main.MainActivity" />
+113-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:81:17-67
+114        </activity>
+115
+116        <!-- نشاط الإعدادات -->
+117        <activity
+117-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:85:9-94:20
+118            android:name="com.quranapp.islamic.presentation.ui.settings.SettingsActivity"
+118-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:86:13-70
+119            android:exported="false"
+119-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:87:13-37
+120            android:parentActivityName="com.quranapp.islamic.presentation.ui.main.MainActivity"
+120-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:90:13-76
+121            android:screenOrientation="portrait"
+121-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:89:13-49
+122            android:theme="@style/Theme.QuranApp" >
+122-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:88:13-50
+123            <meta-data
+123-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:79:13-81:70
+124                android:name="android.support.PARENT_ACTIVITY"
+124-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:80:17-63
+125                android:value=".presentation.ui.main.MainActivity" />
+125-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:81:17-67
+126        </activity>
+127
+128        <!-- نشاط البحث -->
+129        <activity
+129-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:97:9-114:20
+130            android:name="com.quranapp.islamic.presentation.ui.search.SearchActivity"
+130-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:98:13-66
+131            android:exported="false"
+131-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:99:13-37
+132            android:parentActivityName="com.quranapp.islamic.presentation.ui.main.MainActivity"
+132-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:103:13-76
+133            android:screenOrientation="portrait"
+133-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:101:13-49
+134            android:theme="@style/Theme.QuranApp"
+134-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:100:13-50
+135            android:windowSoftInputMode="stateVisible|adjustResize" >
+135-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:102:13-68
+136            <meta-data
+136-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:79:13-81:70
+137                android:name="android.support.PARENT_ACTIVITY"
+137-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:80:17-63
+138                android:value=".presentation.ui.main.MainActivity" />
+138-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:81:17-67
+139
+140            <!-- للبحث من خلال النظام -->
+141            <intent-filter>
+141-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:109:13-111:29
+142                <action android:name="android.intent.action.SEARCH" />
+142-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:110:17-71
+142-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:110:25-68
+143            </intent-filter>
+144
+145            <meta-data
+145-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:112:13-113:54
+146                android:name="android.app.searchable"
+146-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:112:24-61
+147                android:resource="@xml/searchable" />
+147-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:113:17-51
+148        </activity>
+149
+150        <!-- خدمة تشغيل الصوت -->
+151        <service
+151-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:117:9-124:19
+152            android:name="com.quranapp.islamic.data.audio.QuranAudioService"
+152-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:118:13-57
+153            android:exported="false"
+153-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:119:13-37
+154            android:foregroundServiceType="mediaPlayback" >
+154-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:120:13-58
+155            <intent-filter>
+155-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:121:13-123:29
+156                <action android:name="androidx.media3.session.MediaSessionService" />
+156-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:122:17-86
+156-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:122:25-83
+157            </intent-filter>
+158        </service>
+159
+160        <!-- خدمة التحميل -->
+161        <service
+161-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:127:9-130:56
+162            android:name="com.quranapp.islamic.data.download.DownloadService"
+162-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:128:13-58
+163            android:exported="false"
+163-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:129:13-37
+164            android:foregroundServiceType="dataSync" />
+164-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:130:13-53
+165
+166        <!-- خدمة المزامنة -->
+167        <service
+167-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:133:9-136:56
+168            android:name="com.quranapp.islamic.data.sync.SyncService"
+168-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:134:13-50
+169            android:exported="false"
+169-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:135:13-37
+170            android:foregroundServiceType="dataSync" />
+170-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:136:13-53
+171
+172        <!-- مزود الملفات -->
+173        <provider
+174            android:name="androidx.core.content.FileProvider"
+174-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:140:13-62
+175            android:authorities="com.quranapp.islamic.debug.fileprovider"
+175-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:141:13-64
+176            android:exported="false"
+176-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:142:13-37
+177            android:grantUriPermissions="true" >
+177-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:143:13-47
+178            <meta-data
+178-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:144:13-146:54
+179                android:name="android.support.FILE_PROVIDER_PATHS"
+179-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:145:17-67
+180                android:resource="@xml/file_paths" />
+180-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:146:17-51
+181        </provider>
+182
+183        <!-- مستقبل التحديثات -->
+184        <receiver
+184-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:150:9-159:20
+185            android:name="com.quranapp.islamic.broadcast.QuranBroadcastReceiver"
+185-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:151:13-61
+186            android:exported="false" >
+186-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:152:13-37
+187            <intent-filter>
+187-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:153:13-158:29
+188                <action android:name="android.intent.action.BOOT_COMPLETED" />
+188-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:154:17-79
+188-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:154:25-76
+189                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+189-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:155:17-84
+189-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:155:25-81
+190                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+190-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:156:17-81
+190-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:156:25-78
+191
+192                <data android:scheme="package" />
+192-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:58:17-59:44
+192-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:58:23-48
+193            </intent-filter>
+194        </receiver>
+195
+196        <!-- Widget للشاشة الرئيسية -->
+197        <receiver
+197-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:162:9-171:20
+198            android:name="com.quranapp.islamic.widget.QuranWidgetProvider"
+198-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:163:13-55
+199            android:exported="false" >
+199-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:164:13-37
+200            <intent-filter>
+200-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:165:13-167:29
+201                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+201-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:166:17-84
+201-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:166:25-81
+202            </intent-filter>
+203
+204            <meta-data
+204-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:168:13-170:61
+205                android:name="android.appwidget.provider"
+205-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:169:17-58
+206                android:resource="@xml/quran_widget_info" />
+206-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:170:17-58
+207        </receiver>
+208
+209        <!-- Firebase Messaging -->
+210        <service
+210-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:174:9-180:19
+211            android:name="com.quranapp.islamic.firebase.QuranFirebaseMessagingService"
+211-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:175:13-67
+212            android:exported="false" >
+212-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:176:13-37
+213            <intent-filter>
+213-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:177:13-179:29
+214                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+214-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:178:17-78
+214-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:178:25-75
+215            </intent-filter>
+216        </service>
+217
+218        <!-- Meta-data للمكتبات الخارجية -->
+219        <meta-data
+219-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:183:9-185:60
+220            android:name="com.google.firebase.messaging.default_notification_icon"
+220-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:184:13-83
+221            android:resource="@drawable/ic_notification" />
+221-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:185:13-57
+222        <meta-data
+222-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:187:9-189:55
+223            android:name="com.google.firebase.messaging.default_notification_color"
+223-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:188:13-84
+224            android:resource="@color/primary_color" />
+224-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:189:13-52
+225        <meta-data
+225-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:191:9-193:71
+226            android:name="com.google.firebase.messaging.default_notification_channel_id"
+226-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:192:13-89
+227            android:value="@string/default_notification_channel_id" />
+227-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:193:13-68
+228
+229        <!-- ExoPlayer -->
+230        <meta-data
+230-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:196:9-198:59
+231            android:name="com.google.android.gms.car.application"
+231-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:197:13-66
+232            android:resource="@xml/automotive_app_desc" />
+232-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:198:13-56
+233
+234        <!-- للشاشات ذات الكثافة العالية -->
+235        <meta-data
+235-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:201:9-203:35
+236            android:name="android.max_aspect"
+236-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:202:13-46
+237            android:value="2.4" />
+237-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:203:13-32
+238
+239        <!-- لدعم الشاشات القابلة للطي -->
+240        <meta-data
+240-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:206:9-208:36
+241            android:name="android.allow_multiple_resumed_activities"
+241-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:207:13-69
+242            android:value="true" />
+242-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:208:13-33
+243
+244        <service
+244-->[com.google.firebase:firebase-auth-ktx:22.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\96ce369ddcc18f7ff8e91aa045013e26\transformed\firebase-auth-ktx-22.3.1\AndroidManifest.xml:8:9-14:19
+245            android:name="com.google.firebase.components.ComponentDiscoveryService"
+245-->[com.google.firebase:firebase-auth-ktx:22.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\96ce369ddcc18f7ff8e91aa045013e26\transformed\firebase-auth-ktx-22.3.1\AndroidManifest.xml:9:13-84
+246            android:directBootAware="true"
+246-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\de5dccd4eaf0e9685e33e009ee86f005\transformed\firebase-common-20.4.2\AndroidManifest.xml:32:13-43
+247            android:exported="false" >
+247-->[com.google.firebase:firebase-auth-ktx:22.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\96ce369ddcc18f7ff8e91aa045013e26\transformed\firebase-auth-ktx-22.3.1\AndroidManifest.xml:10:13-37
+248            <meta-data
+248-->[com.google.firebase:firebase-auth-ktx:22.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\96ce369ddcc18f7ff8e91aa045013e26\transformed\firebase-auth-ktx-22.3.1\AndroidManifest.xml:11:13-13:85
+249                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthLegacyRegistrar"
+249-->[com.google.firebase:firebase-auth-ktx:22.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\96ce369ddcc18f7ff8e91aa045013e26\transformed\firebase-auth-ktx-22.3.1\AndroidManifest.xml:12:17-119
+250                android:value="com.google.firebase.components.ComponentRegistrar" />
+250-->[com.google.firebase:firebase-auth-ktx:22.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\96ce369ddcc18f7ff8e91aa045013e26\transformed\firebase-auth-ktx-22.3.1\AndroidManifest.xml:13:17-82
+251            <meta-data
+251-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4d9301b083816fb7dd222afabb1dc8b8\transformed\firebase-auth-22.3.1\AndroidManifest.xml:69:13-71:85
+252                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+252-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4d9301b083816fb7dd222afabb1dc8b8\transformed\firebase-auth-22.3.1\AndroidManifest.xml:70:17-109
+253                android:value="com.google.firebase.components.ComponentRegistrar" />
+253-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4d9301b083816fb7dd222afabb1dc8b8\transformed\firebase-auth-22.3.1\AndroidManifest.xml:71:17-82
+254            <meta-data
+254-->[com.google.firebase:firebase-storage-ktx:20.3.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\ecd630e878d759b96270d0849f201803\transformed\firebase-storage-ktx-20.3.0\AndroidManifest.xml:12:13-14:85
+255                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageLegacyRegistrar"
+255-->[com.google.firebase:firebase-storage-ktx:20.3.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\ecd630e878d759b96270d0849f201803\transformed\firebase-storage-ktx-20.3.0\AndroidManifest.xml:13:17-125
+256                android:value="com.google.firebase.components.ComponentRegistrar" />
+256-->[com.google.firebase:firebase-storage-ktx:20.3.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\ecd630e878d759b96270d0849f201803\transformed\firebase-storage-ktx-20.3.0\AndroidManifest.xml:14:17-82
+257            <meta-data
+257-->[com.google.firebase:firebase-crashlytics-ktx:18.6.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\6bc5032aa357c8e07e2569e9410ba797\transformed\firebase-crashlytics-ktx-18.6.1\AndroidManifest.xml:24:13-26:85
+258                android:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar"
+258-->[com.google.firebase:firebase-crashlytics-ktx:18.6.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\6bc5032aa357c8e07e2569e9410ba797\transformed\firebase-crashlytics-ktx-18.6.1\AndroidManifest.xml:25:17-130
+259                android:value="com.google.firebase.components.ComponentRegistrar" />
+259-->[com.google.firebase:firebase-crashlytics-ktx:18.6.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\6bc5032aa357c8e07e2569e9410ba797\transformed\firebase-crashlytics-ktx-18.6.1\AndroidManifest.xml:26:17-82
+260            <meta-data
+260-->[com.google.firebase:firebase-analytics-ktx:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\f5b9e39a9eb37dd1792453e7934256bc\transformed\firebase-analytics-ktx-21.5.0\AndroidManifest.xml:11:13-13:85
+261                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar"
+261-->[com.google.firebase:firebase-analytics-ktx:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\f5b9e39a9eb37dd1792453e7934256bc\transformed\firebase-analytics-ktx-21.5.0\AndroidManifest.xml:12:17-129
+262                android:value="com.google.firebase.components.ComponentRegistrar" />
+262-->[com.google.firebase:firebase-analytics-ktx:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\f5b9e39a9eb37dd1792453e7934256bc\transformed\firebase-analytics-ktx-21.5.0\AndroidManifest.xml:13:17-82
+263            <meta-data
+263-->[com.google.firebase:firebase-firestore-ktx:24.10.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5f090ece3f616b37a909d6b24473a0c0\transformed\firebase-firestore-ktx-24.10.1\AndroidManifest.xml:12:13-14:85
+264                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreLegacyRegistrar"
+264-->[com.google.firebase:firebase-firestore-ktx:24.10.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5f090ece3f616b37a909d6b24473a0c0\transformed\firebase-firestore-ktx-24.10.1\AndroidManifest.xml:13:17-129
+265                android:value="com.google.firebase.components.ComponentRegistrar" />
+265-->[com.google.firebase:firebase-firestore-ktx:24.10.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5f090ece3f616b37a909d6b24473a0c0\transformed\firebase-firestore-ktx-24.10.1\AndroidManifest.xml:14:17-82
+266            <meta-data
+266-->[com.google.firebase:firebase-messaging-ktx:23.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\32dae49bdb89abdc0bcf88f7d5a6f04c\transformed\firebase-messaging-ktx-23.4.0\AndroidManifest.xml:26:13-28:85
+267                android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingLegacyRegistrar"
+267-->[com.google.firebase:firebase-messaging-ktx:23.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\32dae49bdb89abdc0bcf88f7d5a6f04c\transformed\firebase-messaging-ktx-23.4.0\AndroidManifest.xml:27:17-129
+268                android:value="com.google.firebase.components.ComponentRegistrar" />
+268-->[com.google.firebase:firebase-messaging-ktx:23.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\32dae49bdb89abdc0bcf88f7d5a6f04c\transformed\firebase-messaging-ktx-23.4.0\AndroidManifest.xml:28:17-82
+269            <meta-data
+269-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\81903c84ca29bbc7c2a1fafa1126041d\transformed\firebase-storage-20.3.0\AndroidManifest.xml:30:13-32:85
+270                android:name="com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar"
+270-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\81903c84ca29bbc7c2a1fafa1126041d\transformed\firebase-storage-20.3.0\AndroidManifest.xml:31:17-118
+271                android:value="com.google.firebase.components.ComponentRegistrar" />
+271-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\81903c84ca29bbc7c2a1fafa1126041d\transformed\firebase-storage-20.3.0\AndroidManifest.xml:32:17-82
+272            <meta-data
+272-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\81903c84ca29bbc7c2a1fafa1126041d\transformed\firebase-storage-20.3.0\AndroidManifest.xml:33:13-35:85
+273                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+273-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\81903c84ca29bbc7c2a1fafa1126041d\transformed\firebase-storage-20.3.0\AndroidManifest.xml:34:17-107
+274                android:value="com.google.firebase.components.ComponentRegistrar" />
+274-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\81903c84ca29bbc7c2a1fafa1126041d\transformed\firebase-storage-20.3.0\AndroidManifest.xml:35:17-82
+275            <meta-data
+275-->[com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5b32769dc01c0bc82efc5dc9be644fea\transformed\firebase-crashlytics-18.6.1\AndroidManifest.xml:15:13-17:85
+276                android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar"
+276-->[com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5b32769dc01c0bc82efc5dc9be644fea\transformed\firebase-crashlytics-18.6.1\AndroidManifest.xml:16:17-126
+277                android:value="com.google.firebase.components.ComponentRegistrar" />
+277-->[com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5b32769dc01c0bc82efc5dc9be644fea\transformed\firebase-crashlytics-18.6.1\AndroidManifest.xml:17:17-82
+278            <meta-data
+278-->[com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5b32769dc01c0bc82efc5dc9be644fea\transformed\firebase-crashlytics-18.6.1\AndroidManifest.xml:18:13-20:85
+279                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+279-->[com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5b32769dc01c0bc82efc5dc9be644fea\transformed\firebase-crashlytics-18.6.1\AndroidManifest.xml:19:17-115
+280                android:value="com.google.firebase.components.ComponentRegistrar" />
+280-->[com.google.firebase:firebase-crashlytics:18.6.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5b32769dc01c0bc82efc5dc9be644fea\transformed\firebase-crashlytics-18.6.1\AndroidManifest.xml:20:17-82
+281            <meta-data
+281-->[com.google.firebase:firebase-firestore:24.10.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\f8c72b088f5af7e70c3159dd96a6ad6f\transformed\firebase-firestore-24.10.1\AndroidManifest.xml:17:13-19:85
+282                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+282-->[com.google.firebase:firebase-firestore:24.10.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\f8c72b088f5af7e70c3159dd96a6ad6f\transformed\firebase-firestore-24.10.1\AndroidManifest.xml:18:17-122
+283                android:value="com.google.firebase.components.ComponentRegistrar" />
+283-->[com.google.firebase:firebase-firestore:24.10.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\f8c72b088f5af7e70c3159dd96a6ad6f\transformed\firebase-firestore-24.10.1\AndroidManifest.xml:19:17-82
+284            <meta-data
+284-->[com.google.firebase:firebase-firestore:24.10.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\f8c72b088f5af7e70c3159dd96a6ad6f\transformed\firebase-firestore-24.10.1\AndroidManifest.xml:20:13-22:85
+285                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+285-->[com.google.firebase:firebase-firestore:24.10.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\f8c72b088f5af7e70c3159dd96a6ad6f\transformed\firebase-firestore-24.10.1\AndroidManifest.xml:21:17-111
+286                android:value="com.google.firebase.components.ComponentRegistrar" />
+286-->[com.google.firebase:firebase-firestore:24.10.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\f8c72b088f5af7e70c3159dd96a6ad6f\transformed\firebase-firestore-24.10.1\AndroidManifest.xml:22:17-82
+287            <meta-data
+287-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\37420b7a3056c20b982e87b25ad510cd\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:57:13-59:85
+288                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+288-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\37420b7a3056c20b982e87b25ad510cd\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:58:17-122
+289                android:value="com.google.firebase.components.ComponentRegistrar" />
+289-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\37420b7a3056c20b982e87b25ad510cd\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:59:17-82
+290            <meta-data
+290-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\37420b7a3056c20b982e87b25ad510cd\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:60:13-62:85
+291                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+291-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\37420b7a3056c20b982e87b25ad510cd\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:61:17-119
+292                android:value="com.google.firebase.components.ComponentRegistrar" />
+292-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\37420b7a3056c20b982e87b25ad510cd\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:62:17-82
+293            <meta-data
+293-->[com.google.firebase:firebase-appcheck:17.1.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d80d76dc07b688ec38205395b14ac79e\transformed\firebase-appcheck-17.1.1\AndroidManifest.xml:25:13-27:85
+294                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar"
+294-->[com.google.firebase:firebase-appcheck:17.1.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d80d76dc07b688ec38205395b14ac79e\transformed\firebase-appcheck-17.1.1\AndroidManifest.xml:26:17-120
+295                android:value="com.google.firebase.components.ComponentRegistrar" />
+295-->[com.google.firebase:firebase-appcheck:17.1.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d80d76dc07b688ec38205395b14ac79e\transformed\firebase-appcheck-17.1.1\AndroidManifest.xml:27:17-82
+296            <meta-data
+296-->[com.google.firebase:firebase-appcheck:17.1.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d80d76dc07b688ec38205395b14ac79e\transformed\firebase-appcheck-17.1.1\AndroidManifest.xml:28:13-30:85
+297                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar"
+297-->[com.google.firebase:firebase-appcheck:17.1.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d80d76dc07b688ec38205395b14ac79e\transformed\firebase-appcheck-17.1.1\AndroidManifest.xml:29:17-117
+298                android:value="com.google.firebase.components.ComponentRegistrar" />
+298-->[com.google.firebase:firebase-appcheck:17.1.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d80d76dc07b688ec38205395b14ac79e\transformed\firebase-appcheck-17.1.1\AndroidManifest.xml:30:17-82
+299            <meta-data
+299-->[com.google.firebase:firebase-sessions:1.2.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4df3207f5fd002f69094c8fbc9bdec4c\transformed\firebase-sessions-1.2.1\AndroidManifest.xml:29:13-31:85
+300                android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar"
+300-->[com.google.firebase:firebase-sessions:1.2.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4df3207f5fd002f69094c8fbc9bdec4c\transformed\firebase-sessions-1.2.1\AndroidManifest.xml:30:17-117
+301                android:value="com.google.firebase.components.ComponentRegistrar" />
+301-->[com.google.firebase:firebase-sessions:1.2.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4df3207f5fd002f69094c8fbc9bdec4c\transformed\firebase-sessions-1.2.1\AndroidManifest.xml:31:17-82
+302            <meta-data
+302-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\35c7bd1fd7d05013f62b75a52a089ebd\transformed\play-services-measurement-api-21.5.0\AndroidManifest.xml:37:13-39:85
+303                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+303-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\35c7bd1fd7d05013f62b75a52a089ebd\transformed\play-services-measurement-api-21.5.0\AndroidManifest.xml:38:17-139
+304                android:value="com.google.firebase.components.ComponentRegistrar" />
+304-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\35c7bd1fd7d05013f62b75a52a089ebd\transformed\play-services-measurement-api-21.5.0\AndroidManifest.xml:39:17-82
+305            <meta-data
+305-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4a7c8cffd998bdef434ff9feb3d39e43\transformed\firebase-installations-17.2.0\AndroidManifest.xml:15:13-17:85
+306                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+306-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4a7c8cffd998bdef434ff9feb3d39e43\transformed\firebase-installations-17.2.0\AndroidManifest.xml:16:17-130
+307                android:value="com.google.firebase.components.ComponentRegistrar" />
+307-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4a7c8cffd998bdef434ff9feb3d39e43\transformed\firebase-installations-17.2.0\AndroidManifest.xml:17:17-82
+308            <meta-data
+308-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4a7c8cffd998bdef434ff9feb3d39e43\transformed\firebase-installations-17.2.0\AndroidManifest.xml:18:13-20:85
+309                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+309-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4a7c8cffd998bdef434ff9feb3d39e43\transformed\firebase-installations-17.2.0\AndroidManifest.xml:19:17-127
+310                android:value="com.google.firebase.components.ComponentRegistrar" />
+310-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4a7c8cffd998bdef434ff9feb3d39e43\transformed\firebase-installations-17.2.0\AndroidManifest.xml:20:17-82
+311            <meta-data
+311-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\a96e09e9665d4edbf92b3d99f89b7580\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:12:13-14:85
+312                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+312-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\a96e09e9665d4edbf92b3d99f89b7580\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:13:17-116
+313                android:value="com.google.firebase.components.ComponentRegistrar" />
+313-->[com.google.firebase:firebase-common-ktx:20.4.2] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\a96e09e9665d4edbf92b3d99f89b7580\transformed\firebase-common-ktx-20.4.2\AndroidManifest.xml:14:17-82
+314            <meta-data
+314-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\de5dccd4eaf0e9685e33e009ee86f005\transformed\firebase-common-20.4.2\AndroidManifest.xml:35:13-37:85
+315                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+315-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\de5dccd4eaf0e9685e33e009ee86f005\transformed\firebase-common-20.4.2\AndroidManifest.xml:36:17-109
+316                android:value="com.google.firebase.components.ComponentRegistrar" />
+316-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\de5dccd4eaf0e9685e33e009ee86f005\transformed\firebase-common-20.4.2\AndroidManifest.xml:37:17-82
+317            <meta-data
+317-->[com.google.firebase:firebase-datatransport:18.1.8] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\067d67b7ca2f7deb8a7d311b85bd458e\transformed\firebase-datatransport-18.1.8\AndroidManifest.xml:27:13-29:85
+318                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+318-->[com.google.firebase:firebase-datatransport:18.1.8] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\067d67b7ca2f7deb8a7d311b85bd458e\transformed\firebase-datatransport-18.1.8\AndroidManifest.xml:28:17-115
+319                android:value="com.google.firebase.components.ComponentRegistrar" />
+319-->[com.google.firebase:firebase-datatransport:18.1.8] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\067d67b7ca2f7deb8a7d311b85bd458e\transformed\firebase-datatransport-18.1.8\AndroidManifest.xml:29:17-82
+320        </service>
+321
+322        <activity
+322-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4d9301b083816fb7dd222afabb1dc8b8\transformed\firebase-auth-22.3.1\AndroidManifest.xml:29:9-46:20
+323            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+323-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4d9301b083816fb7dd222afabb1dc8b8\transformed\firebase-auth-22.3.1\AndroidManifest.xml:30:13-80
+324            android:excludeFromRecents="true"
+324-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4d9301b083816fb7dd222afabb1dc8b8\transformed\firebase-auth-22.3.1\AndroidManifest.xml:31:13-46
+325            android:exported="true"
+325-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4d9301b083816fb7dd222afabb1dc8b8\transformed\firebase-auth-22.3.1\AndroidManifest.xml:32:13-36
+326            android:launchMode="singleTask"
+326-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4d9301b083816fb7dd222afabb1dc8b8\transformed\firebase-auth-22.3.1\AndroidManifest.xml:33:13-44
+327            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+327-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4d9301b083816fb7dd222afabb1dc8b8\transformed\firebase-auth-22.3.1\AndroidManifest.xml:34:13-72
+328            <intent-filter>
+328-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4d9301b083816fb7dd222afabb1dc8b8\transformed\firebase-auth-22.3.1\AndroidManifest.xml:35:13-45:29
+329                <action android:name="android.intent.action.VIEW" />
+329-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:55:17-69
+329-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:55:25-66
+330
+331                <category android:name="android.intent.category.DEFAULT" />
+331-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:56:17-76
+331-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:56:27-73
+332                <category android:name="android.intent.category.BROWSABLE" />
+332-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:57:17-78
+332-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:57:27-75
+333
+334                <data
+334-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:58:17-59:44
+335                    android:host="firebase.auth"
+335-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:59:21-41
+336                    android:path="/"
+337                    android:scheme="genericidp" />
+337-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:58:23-48
+338            </intent-filter>
+339        </activity>
+340        <activity
+340-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4d9301b083816fb7dd222afabb1dc8b8\transformed\firebase-auth-22.3.1\AndroidManifest.xml:47:9-64:20
+341            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+341-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4d9301b083816fb7dd222afabb1dc8b8\transformed\firebase-auth-22.3.1\AndroidManifest.xml:48:13-79
+342            android:excludeFromRecents="true"
+342-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4d9301b083816fb7dd222afabb1dc8b8\transformed\firebase-auth-22.3.1\AndroidManifest.xml:49:13-46
+343            android:exported="true"
+343-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4d9301b083816fb7dd222afabb1dc8b8\transformed\firebase-auth-22.3.1\AndroidManifest.xml:50:13-36
+344            android:launchMode="singleTask"
+344-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4d9301b083816fb7dd222afabb1dc8b8\transformed\firebase-auth-22.3.1\AndroidManifest.xml:51:13-44
+345            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+345-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4d9301b083816fb7dd222afabb1dc8b8\transformed\firebase-auth-22.3.1\AndroidManifest.xml:52:13-72
+346            <intent-filter>
+346-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4d9301b083816fb7dd222afabb1dc8b8\transformed\firebase-auth-22.3.1\AndroidManifest.xml:53:13-63:29
+347                <action android:name="android.intent.action.VIEW" />
+347-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:55:17-69
+347-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:55:25-66
+348
+349                <category android:name="android.intent.category.DEFAULT" />
+349-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:56:17-76
+349-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:56:27-73
+350                <category android:name="android.intent.category.BROWSABLE" />
+350-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:57:17-78
+350-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:57:27-75
+351
+352                <data
+352-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:58:17-59:44
+353                    android:host="firebase.auth"
+353-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:59:21-41
+354                    android:path="/"
+355                    android:scheme="recaptcha" />
+355-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:58:23-48
+356            </intent-filter>
+357        </activity>
+358
+359        <receiver
+359-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\37420b7a3056c20b982e87b25ad510cd\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:29:9-40:20
+360            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+360-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\37420b7a3056c20b982e87b25ad510cd\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:30:13-78
+361            android:exported="true"
+361-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\37420b7a3056c20b982e87b25ad510cd\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:31:13-36
+362            android:permission="com.google.android.c2dm.permission.SEND" >
+362-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\37420b7a3056c20b982e87b25ad510cd\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:32:13-73
+363            <intent-filter>
+363-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\37420b7a3056c20b982e87b25ad510cd\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:33:13-35:29
+364                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+364-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\37420b7a3056c20b982e87b25ad510cd\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:34:17-81
+364-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\37420b7a3056c20b982e87b25ad510cd\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:34:25-78
+365            </intent-filter>
+366
+367            <meta-data
+367-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\37420b7a3056c20b982e87b25ad510cd\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:37:13-39:40
+368                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+368-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\37420b7a3056c20b982e87b25ad510cd\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:38:17-92
+369                android:value="true" />
+369-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\37420b7a3056c20b982e87b25ad510cd\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:39:17-37
+370        </receiver>
+371        <!--
+372             FirebaseMessagingService performs security checks at runtime,
+373             but set to not exported to explicitly avoid allowing another app to call it.
+374        -->
+375        <service
+375-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\37420b7a3056c20b982e87b25ad510cd\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:46:9-53:19
+376            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+376-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\37420b7a3056c20b982e87b25ad510cd\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:47:13-82
+377            android:directBootAware="true"
+377-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\37420b7a3056c20b982e87b25ad510cd\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:48:13-43
+378            android:exported="false" >
+378-->[com.google.firebase:firebase-messaging:23.4.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\37420b7a3056c20b982e87b25ad510cd\transformed\firebase-messaging-23.4.0\AndroidManifest.xml:49:13-37
+379            <intent-filter android:priority="-500" >
+379-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:177:13-179:29
+380                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+380-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:178:17-78
+380-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:178:25-75
+381            </intent-filter>
+382        </service>
+383        <service
+383-->[com.google.firebase:firebase-sessions:1.2.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4df3207f5fd002f69094c8fbc9bdec4c\transformed\firebase-sessions-1.2.1\AndroidManifest.xml:22:9-25:40
+384            android:name="com.google.firebase.sessions.SessionLifecycleService"
+384-->[com.google.firebase:firebase-sessions:1.2.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4df3207f5fd002f69094c8fbc9bdec4c\transformed\firebase-sessions-1.2.1\AndroidManifest.xml:23:13-80
+385            android:enabled="true"
+385-->[com.google.firebase:firebase-sessions:1.2.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4df3207f5fd002f69094c8fbc9bdec4c\transformed\firebase-sessions-1.2.1\AndroidManifest.xml:24:13-35
+386            android:exported="false" />
+386-->[com.google.firebase:firebase-sessions:1.2.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4df3207f5fd002f69094c8fbc9bdec4c\transformed\firebase-sessions-1.2.1\AndroidManifest.xml:25:13-37
+387
+388        <property
+388-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\35c7bd1fd7d05013f62b75a52a089ebd\transformed\play-services-measurement-api-21.5.0\AndroidManifest.xml:30:9-32:61
+389            android:name="android.adservices.AD_SERVICES_CONFIG"
+389-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\35c7bd1fd7d05013f62b75a52a089ebd\transformed\play-services-measurement-api-21.5.0\AndroidManifest.xml:31:13-65
+390            android:resource="@xml/ga_ad_services_config" />
+390-->[com.google.android.gms:play-services-measurement-api:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\35c7bd1fd7d05013f62b75a52a089ebd\transformed\play-services-measurement-api-21.5.0\AndroidManifest.xml:32:13-58
+391
+392        <provider
+392-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\de5dccd4eaf0e9685e33e009ee86f005\transformed\firebase-common-20.4.2\AndroidManifest.xml:23:9-28:39
+393            android:name="com.google.firebase.provider.FirebaseInitProvider"
+393-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\de5dccd4eaf0e9685e33e009ee86f005\transformed\firebase-common-20.4.2\AndroidManifest.xml:24:13-77
+394            android:authorities="com.quranapp.islamic.debug.firebaseinitprovider"
+394-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\de5dccd4eaf0e9685e33e009ee86f005\transformed\firebase-common-20.4.2\AndroidManifest.xml:25:13-72
+395            android:directBootAware="true"
+395-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\de5dccd4eaf0e9685e33e009ee86f005\transformed\firebase-common-20.4.2\AndroidManifest.xml:26:13-43
+396            android:exported="false"
+396-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\de5dccd4eaf0e9685e33e009ee86f005\transformed\firebase-common-20.4.2\AndroidManifest.xml:27:13-37
+397            android:initOrder="100" />
+397-->[com.google.firebase:firebase-common:20.4.2] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\de5dccd4eaf0e9685e33e009ee86f005\transformed\firebase-common-20.4.2\AndroidManifest.xml:28:13-36
+398
+399        <service
+399-->[androidx.room:room-runtime:2.6.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d31bead9f2131d1f51154fb7de8720cd\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+400            android:name="androidx.room.MultiInstanceInvalidationService"
+400-->[androidx.room:room-runtime:2.6.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d31bead9f2131d1f51154fb7de8720cd\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+401            android:directBootAware="true"
+401-->[androidx.room:room-runtime:2.6.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d31bead9f2131d1f51154fb7de8720cd\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+402            android:exported="false" />
+402-->[androidx.room:room-runtime:2.6.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d31bead9f2131d1f51154fb7de8720cd\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+403
+404        <provider
+404-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:29:9-37:20
+405            android:name="androidx.startup.InitializationProvider"
+405-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:30:13-67
+406            android:authorities="com.quranapp.islamic.debug.androidx-startup"
+406-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:31:13-68
+407            android:exported="false" >
+407-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:32:13-37
+408            <meta-data
+408-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:34:13-36:52
+409                android:name="androidx.work.WorkManagerInitializer"
+409-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:35:17-68
+410                android:value="androidx.startup" />
+410-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:36:17-49
+411            <meta-data
+411-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\fc0bf2554b486cc27ea5ef498a47849f\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+412                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+412-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\fc0bf2554b486cc27ea5ef498a47849f\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+413                android:value="androidx.startup" />
+413-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\fc0bf2554b486cc27ea5ef498a47849f\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+414            <meta-data
+414-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\ca2ada554e0266d7f30a5ff423088bd8\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+415                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+415-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\ca2ada554e0266d7f30a5ff423088bd8\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+416                android:value="androidx.startup" />
+416-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\ca2ada554e0266d7f30a5ff423088bd8\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+417            <meta-data
+417-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5817d382510b34772679370320c44608\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+418                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+418-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5817d382510b34772679370320c44608\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+419                android:value="androidx.startup" />
+419-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5817d382510b34772679370320c44608\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+420        </provider>
+421
+422        <service
+422-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:39:9-45:35
+423            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+423-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:40:13-88
+424            android:directBootAware="false"
+424-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:41:13-44
+425            android:enabled="@bool/enable_system_alarm_service_default"
+425-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:42:13-72
+426            android:exported="false" />
+426-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:43:13-37
+427        <service
+427-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:46:9-52:35
+428            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+428-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:47:13-84
+429            android:directBootAware="false"
+429-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:48:13-44
+430            android:enabled="@bool/enable_system_job_service_default"
+430-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:49:13-70
+431            android:exported="true"
+431-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:50:13-36
+432            android:permission="android.permission.BIND_JOB_SERVICE" />
+432-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:51:13-69
+433        <service
+433-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:53:9-59:35
+434            android:name="androidx.work.impl.foreground.SystemForegroundService"
+434-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:54:13-81
+435            android:directBootAware="false"
+435-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:55:13-44
+436            android:enabled="@bool/enable_system_foreground_service_default"
+436-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:56:13-77
+437            android:exported="false" />
+437-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:57:13-37
+438
+439        <receiver
+439-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:61:9-66:35
+440            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+440-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:62:13-88
+441            android:directBootAware="false"
+441-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:63:13-44
+442            android:enabled="true"
+442-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:64:13-35
+443            android:exported="false" />
+443-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:65:13-37
+444        <receiver
+444-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:67:9-77:20
+445            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+445-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:68:13-106
+446            android:directBootAware="false"
+446-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:69:13-44
+447            android:enabled="false"
+447-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:70:13-36
+448            android:exported="false" >
+448-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:71:13-37
+449            <intent-filter>
+449-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:73:13-76:29
+450                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+450-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:74:17-87
+450-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:74:25-84
+451                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+451-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:75:17-90
+451-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:75:25-87
+452            </intent-filter>
+453        </receiver>
+454        <receiver
+454-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:78:9-88:20
+455            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+455-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:79:13-104
+456            android:directBootAware="false"
+456-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:80:13-44
+457            android:enabled="false"
+457-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:81:13-36
+458            android:exported="false" >
+458-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:82:13-37
+459            <intent-filter>
+459-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:84:13-87:29
+460                <action android:name="android.intent.action.BATTERY_OKAY" />
+460-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:85:17-77
+460-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:85:25-74
+461                <action android:name="android.intent.action.BATTERY_LOW" />
+461-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:86:17-76
+461-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:86:25-73
+462            </intent-filter>
+463        </receiver>
+464        <receiver
+464-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:89:9-99:20
+465            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+465-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:90:13-104
+466            android:directBootAware="false"
+466-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:91:13-44
+467            android:enabled="false"
+467-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:92:13-36
+468            android:exported="false" >
+468-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:93:13-37
+469            <intent-filter>
+469-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:95:13-98:29
+470                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+470-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:96:17-83
+470-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:96:25-80
+471                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+471-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:97:17-82
+471-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:97:25-79
+472            </intent-filter>
+473        </receiver>
+474        <receiver
+474-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:100:9-109:20
+475            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+475-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:101:13-103
+476            android:directBootAware="false"
+476-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:102:13-44
+477            android:enabled="false"
+477-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:103:13-36
+478            android:exported="false" >
+478-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:104:13-37
+479            <intent-filter>
+479-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:106:13-108:29
+480                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+480-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:107:17-79
+480-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:107:25-76
+481            </intent-filter>
+482        </receiver>
+483        <receiver
+483-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:110:9-121:20
+484            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+484-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:111:13-88
+485            android:directBootAware="false"
+485-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:112:13-44
+486            android:enabled="false"
+486-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:113:13-36
+487            android:exported="false" >
+487-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:114:13-37
+488            <intent-filter>
+488-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:116:13-120:29
+489                <action android:name="android.intent.action.BOOT_COMPLETED" />
+489-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:154:17-79
+489-->C:\Users\ZEX\Desktop\QuranApp_Project\app\src\main\AndroidManifest.xml:154:25-76
+490                <action android:name="android.intent.action.TIME_SET" />
+490-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:118:17-73
+490-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:118:25-70
+491                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+491-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:119:17-81
+491-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:119:25-78
+492            </intent-filter>
+493        </receiver>
+494        <receiver
+494-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:122:9-131:20
+495            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+495-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:123:13-99
+496            android:directBootAware="false"
+496-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:124:13-44
+497            android:enabled="@bool/enable_system_alarm_service_default"
+497-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:125:13-72
+498            android:exported="false" >
+498-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:126:13-37
+499            <intent-filter>
+499-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:128:13-130:29
+500                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+500-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:129:17-98
+500-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:129:25-95
+501            </intent-filter>
+502        </receiver>
+503        <receiver
+503-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:132:9-142:20
+504            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+504-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:133:13-78
+505            android:directBootAware="false"
+505-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:134:13-44
+506            android:enabled="true"
+506-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:135:13-35
+507            android:exported="true"
+507-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:136:13-36
+508            android:permission="android.permission.DUMP" >
+508-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:137:13-57
+509            <intent-filter>
+509-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:139:13-141:29
+510                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+510-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:140:17-88
+510-->[androidx.work:work-runtime:2.9.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\d205a8bc49ff132a357dc8a5d44a72d0\transformed\work-runtime-2.9.0\AndroidManifest.xml:140:25-85
+511            </intent-filter>
+512        </receiver>
+513
+514        <activity
+514-->[androidx.compose.ui:ui-test-manifest:1.6.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\caab46e8d015054754fa879a8a9ddb79\transformed\ui-test-manifest-1.6.1\AndroidManifest.xml:23:9-25:39
+515            android:name="androidx.activity.ComponentActivity"
+515-->[androidx.compose.ui:ui-test-manifest:1.6.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\caab46e8d015054754fa879a8a9ddb79\transformed\ui-test-manifest-1.6.1\AndroidManifest.xml:24:13-63
+516            android:exported="true" />
+516-->[androidx.compose.ui:ui-test-manifest:1.6.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\caab46e8d015054754fa879a8a9ddb79\transformed\ui-test-manifest-1.6.1\AndroidManifest.xml:25:13-36
+517        <activity
+517-->[androidx.compose.ui:ui-tooling-android:1.6.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\f5b06e5c8937f7754ab8b9c566a49a3f\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+518            android:name="androidx.compose.ui.tooling.PreviewActivity"
+518-->[androidx.compose.ui:ui-tooling-android:1.6.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\f5b06e5c8937f7754ab8b9c566a49a3f\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+519            android:exported="true" />
+519-->[androidx.compose.ui:ui-tooling-android:1.6.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\f5b06e5c8937f7754ab8b9c566a49a3f\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+520
+521        <receiver
+521-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\aaf367aadfcc09a70fd6d775069858bd\transformed\play-services-measurement-21.5.0\AndroidManifest.xml:29:9-33:20
+522            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+522-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\aaf367aadfcc09a70fd6d775069858bd\transformed\play-services-measurement-21.5.0\AndroidManifest.xml:30:13-85
+523            android:enabled="true"
+523-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\aaf367aadfcc09a70fd6d775069858bd\transformed\play-services-measurement-21.5.0\AndroidManifest.xml:31:13-35
+524            android:exported="false" >
+524-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\aaf367aadfcc09a70fd6d775069858bd\transformed\play-services-measurement-21.5.0\AndroidManifest.xml:32:13-37
+525        </receiver>
+526
+527        <service
+527-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\aaf367aadfcc09a70fd6d775069858bd\transformed\play-services-measurement-21.5.0\AndroidManifest.xml:35:9-38:40
+528            android:name="com.google.android.gms.measurement.AppMeasurementService"
+528-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\aaf367aadfcc09a70fd6d775069858bd\transformed\play-services-measurement-21.5.0\AndroidManifest.xml:36:13-84
+529            android:enabled="true"
+529-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\aaf367aadfcc09a70fd6d775069858bd\transformed\play-services-measurement-21.5.0\AndroidManifest.xml:37:13-35
+530            android:exported="false" />
+530-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\aaf367aadfcc09a70fd6d775069858bd\transformed\play-services-measurement-21.5.0\AndroidManifest.xml:38:13-37
+531        <service
+531-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\aaf367aadfcc09a70fd6d775069858bd\transformed\play-services-measurement-21.5.0\AndroidManifest.xml:39:9-43:72
+532            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+532-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\aaf367aadfcc09a70fd6d775069858bd\transformed\play-services-measurement-21.5.0\AndroidManifest.xml:40:13-87
+533            android:enabled="true"
+533-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\aaf367aadfcc09a70fd6d775069858bd\transformed\play-services-measurement-21.5.0\AndroidManifest.xml:41:13-35
+534            android:exported="false"
+534-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\aaf367aadfcc09a70fd6d775069858bd\transformed\play-services-measurement-21.5.0\AndroidManifest.xml:42:13-37
+535            android:permission="android.permission.BIND_JOB_SERVICE" />
+535-->[com.google.android.gms:play-services-measurement:21.5.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\aaf367aadfcc09a70fd6d775069858bd\transformed\play-services-measurement-21.5.0\AndroidManifest.xml:43:13-69
+536
+537        <uses-library
+537-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4738bdb0804994b39181c45dbd8fb319\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:23:9-25:40
+538            android:name="android.ext.adservices"
+538-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4738bdb0804994b39181c45dbd8fb319\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:24:13-50
+539            android:required="false" />
+539-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4738bdb0804994b39181c45dbd8fb319\transformed\ads-adservices-1.0.0-beta05\AndroidManifest.xml:25:13-37
+540
+541        <activity
+541-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\da8dec8f0cf283923b751269c512519d\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+542            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+542-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\da8dec8f0cf283923b751269c512519d\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+543            android:exported="false"
+543-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\da8dec8f0cf283923b751269c512519d\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+544            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+544-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\da8dec8f0cf283923b751269c512519d\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+545
+546        <meta-data
+546-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\bd52e95e8d9d16a285ad639c7ad3ef25\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+547            android:name="com.google.android.gms.version"
+547-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\bd52e95e8d9d16a285ad639c7ad3ef25\transformed\play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+548            android:value="@integer/google_play_services_version" />
+548-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\bd52e95e8d9d16a285ad639c7ad3ef25\transformed\play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+549
+550        <service
+550-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4c891da3328bcc5bc027a50921986eab\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:28:9-34:19
+551            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+551-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4c891da3328bcc5bc027a50921986eab\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:29:13-103
+552            android:exported="false" >
+552-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4c891da3328bcc5bc027a50921986eab\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:30:13-37
+553            <meta-data
+553-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4c891da3328bcc5bc027a50921986eab\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:31:13-33:39
+554                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+554-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4c891da3328bcc5bc027a50921986eab\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:32:17-94
+555                android:value="cct" />
+555-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\4c891da3328bcc5bc027a50921986eab\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:33:17-36
+556        </service>
+557
+558        <receiver
+558-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5817d382510b34772679370320c44608\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+559            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+559-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5817d382510b34772679370320c44608\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+560            android:directBootAware="false"
+560-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5817d382510b34772679370320c44608\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+561            android:enabled="true"
+561-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5817d382510b34772679370320c44608\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+562            android:exported="true"
+562-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5817d382510b34772679370320c44608\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+563            android:permission="android.permission.DUMP" >
+563-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5817d382510b34772679370320c44608\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+564            <intent-filter>
+564-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5817d382510b34772679370320c44608\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+565                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+565-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5817d382510b34772679370320c44608\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+565-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5817d382510b34772679370320c44608\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+566            </intent-filter>
+567            <intent-filter>
+567-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5817d382510b34772679370320c44608\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+568                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+568-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5817d382510b34772679370320c44608\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+568-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5817d382510b34772679370320c44608\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+569            </intent-filter>
+570            <intent-filter>
+570-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5817d382510b34772679370320c44608\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+571                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+571-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5817d382510b34772679370320c44608\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+571-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5817d382510b34772679370320c44608\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+572            </intent-filter>
+573            <intent-filter>
+573-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5817d382510b34772679370320c44608\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+574                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+574-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5817d382510b34772679370320c44608\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+574-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\5817d382510b34772679370320c44608\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+575            </intent-filter>
+576        </receiver>
+577
+578        <service
+578-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\65904b8c1c4275dd080824367319f8ba\transformed\transport-runtime-3.1.9\AndroidManifest.xml:26:9-30:19
+579            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+579-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\65904b8c1c4275dd080824367319f8ba\transformed\transport-runtime-3.1.9\AndroidManifest.xml:27:13-117
+580            android:exported="false"
+580-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\65904b8c1c4275dd080824367319f8ba\transformed\transport-runtime-3.1.9\AndroidManifest.xml:28:13-37
+581            android:permission="android.permission.BIND_JOB_SERVICE" >
+581-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\65904b8c1c4275dd080824367319f8ba\transformed\transport-runtime-3.1.9\AndroidManifest.xml:29:13-69
+582        </service>
+583
+584        <receiver
+584-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\65904b8c1c4275dd080824367319f8ba\transformed\transport-runtime-3.1.9\AndroidManifest.xml:32:9-34:40
+585            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+585-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\65904b8c1c4275dd080824367319f8ba\transformed\transport-runtime-3.1.9\AndroidManifest.xml:33:13-132
+586            android:exported="false" />
+586-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\ZEX\.gradle\caches\8.14.3\transforms\65904b8c1c4275dd080824367319f8ba\transformed\transport-runtime-3.1.9\AndroidManifest.xml:34:13-37
+587    </application>
+588
+589</manifest>
